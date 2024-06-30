@@ -80,8 +80,7 @@ then by running the following command, it will host this page in your local port
 python app.py
 ``` 
 
-## Deployement on Heroku
-Vist <a href="Deployement on Heroku">here</a> for details.
+
 
 ## Directory tree
 ------
@@ -90,7 +89,9 @@ Vist <a href="Deployement on Heroku">here</a> for details.
 ## Technologies Used
 <img target="_blank" src="https://blog.keras.io/img/keras-tensorflow-logo.jpg" width=400>
 <br><img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=270><img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280><img target="_blank" src="https://kazoo.jp/wpkazoo2019/wp-content/uploads/2018/05/bootstrap4.png" width=270>
-<br>
+
+
 ## Author
-* Medhat Mohamed Deif 
-* Omnia Eldeeb 
+  *  Medhat Mohamed Deif 
+  *  Omnia Eldeeb 
+
