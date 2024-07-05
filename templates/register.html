@@ -23,7 +23,7 @@
         <div class="login">
            <img src="{{ url_for('static', filename='form-bg4.jpg') }}" alt="image" class="login__bg">
   
-           <form action="" class="login__form">
+           <form action="{{ url_for('login') }}" method="post" class="login__form">
               <h1 class="login__title">Sign Up</h1>
   
               <div class="login__inputs">
@@ -46,10 +46,10 @@
               </div>
   
                 
-              <button type="submit" class="login__button">Sign Up</button>
+              <button type="submit" class="login__button" >Sign Up</button>
   
               <div class="login__register">
-                 <a href="#">Login Insteded</a>
+                 <a href="{{url_for('login')}}">Login Insteded</a>
               </div>
            </form>
         </div>
