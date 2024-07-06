@@ -61,24 +61,30 @@
         <div class="login">
            <img src="{{ url_for('static', filename='form-bg4.jpg') }}" alt="image" class="login__bg">
   
-           <form action="{{ url_for('login') }}" method="post" class="login__form">
+           <form action="{{ url_for('register') }}" method="post" class="login__form">
               <h1 class="login__title">Sign Up</h1>
   
+              {% if msg %}
+              <div class="alert alert-danger" role="alert">
+                 {{ msg }}
+              </div>
+              {% endif %}
+              
               <div class="login__inputs">
                  <div class="login__box">
-                    <input type="email" placeholder="Email:" required class="login__input">
+                    <input name="email" type="email" placeholder="Email:" required class="login__input">
                     <i class="fa-solid fa-envelope"></i>
                  </div>
                  <div class="login__box">
-                  <input type="user" placeholder="UserName:" required class="login__input">
+                  <input name="username"  type="user" placeholder="UserName:" required class="login__input">
                   <i class="fa-solid fa-user"></i>
                  </div>
                  <div class="login__box">
-                    <input type="password" placeholder="Password:" required class="login__input">
+                    <input type="password" name="password placeholder="Password:" required class="login__input">
                     <i class="fa-solid fa-lock"></i>
                  </div>
                  <div class="login__box">
-                  <input type="password" placeholder="Confirm Password:" required class="login__input">
+                  <input type="password" name="confirm_password" placeholder="Confirm Password:" required class="login__input">
                   <i class="fa-solid fa-lock"></i>
                </div>
               </div>
