@@ -20,7 +20,7 @@
   }
 
 .navbar-light .navbar-brand {
-  color: #CCA903;
+   color: #CCA903;
    font-size: 30px;
    font-weight: 700;
    text-transform: uppercase;
@@ -47,8 +47,7 @@
 
 .bg-light {
   background-color:none !important; 
-  
-  
+
 }
 .navbar-light .navbar-nav .active>.nav-link,
  .navbar-light .navbar-nav .nav-link.active, 
@@ -85,7 +84,7 @@
        
         min-width: 100%;
         min-height: 100%;
-          object-fit:contain; 
+        object-fit:contain; 
 }
 
 form h4{

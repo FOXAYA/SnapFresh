@@ -38,12 +38,7 @@
     text-decoration: none;
   }
   
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  
+ 
   /*=============== LOGIN ===============*/
   .login {
     position: relative;
@@ -52,8 +47,23 @@
     align-items: center;
   }
   
+  .nav-login {
+    background-color:none !important; 
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .nav-login .navbar-nav .nav-link 
+  {
+    color: var(--bord-color);
+  }
   .login__bg {
-    position: absolute;
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit:cover;
@@ -62,6 +72,9 @@
   
   .login__form {
     position: relative;
+    z-index: 100;
+    top: 0;
+    left: 0;
     margin-inline: 1.5rem;
     background-color: hsla(0, 0%, 100%, .01);
     border: 1px solid var(--bord-color);

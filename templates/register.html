@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Base.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <!-- Fonts -->
+<!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +22,42 @@
     <title>Login page</title>
 </head>
 <body>
+   <nav class="navbar navbar-expand-lg navbar-light nav-login ">
+      <div class="container nav_container">
+      <a class="navbar-brand" href="{{ url_for('home')}}"><strong class="strong">Snap</strong>Fresh</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" href="{{ url_for('home')}}">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('register')}}">Register</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('login')}}">Login</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/Medo20300/FruitAssessment-Expert.git">Code Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Contact Us
+                  </a>
+          
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="https://www.linkedin.com/in/medhat-deif-lab-manager/">Linkedin</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="https://www.facebook.com/setkfoxaya1?mibextid=ZbWKwL/">Facebook</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </div>
+  </nav>
+
         <div class="login">
            <img src="{{ url_for('static', filename='form-bg4.jpg') }}" alt="image" class="login__bg">
   
