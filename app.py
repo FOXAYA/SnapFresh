@@ -35,7 +35,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     msg = ''
-    if request.method == 'POST' and 'username' in request.form and 'password' in request.form and 'email' in request.form:
+    if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
         email = request.form['email']
@@ -53,16 +53,17 @@ def register():
         elif not username or not password or not email:
             msg = 'Please fill out the form!'
         else:
-            cursor.execute('INSERT INTO accounts VALUES (NULL, %s, %s, %s)', (username, password, email))
+            cursor.execute('INSERT INTO accounts (username, password, email) VALUES (%s, %s, %s)', (username, password, email))
             mysql.connection.commit()
             msg = 'You have successfully registered!'
             return redirect(url_for('login'))  # Redirect to login after successful registration
+
     return render_template('register.html', msg=msg)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     msg = ''
-    if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
+    if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
 
@@ -78,7 +79,9 @@ def login():
             return redirect(url_for('home'))  # Redirect to home after successful login
         else:
             msg = 'Incorrect username / password! Please try again.'
+
     return render_template('login.html', msg=msg)
+
 
 @app.route('/')
 def home():

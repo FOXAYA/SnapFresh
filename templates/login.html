@@ -64,36 +64,36 @@
         <div class="login">
            <img src="{{ url_for('static', filename='form-bg4.jpg') }}" alt="image" class="login__bg">
   
-           <form action="" class="login__form">
-              <h1 class="login__title">Login</h1>
-  
-              <div class="login__inputs">
-                 <div class="login__box">
-                    <input  name="username" type="email" placeholder="Email:" required class="login__input">
-                    <i class="fa-solid fa-envelope"></i>
-                 </div>
-  
-                 <div class="login__box">
-                    <input  name="password" type="password" placeholder="Password:" required class="login__input">
+           <form action="{{ url_for('login') }}" method="post" class="login__form">
+            <h1 class="login__title">Login</h1>
+            {% if msg %}
+            <div class="alert alert-danger" role="alert">
+                {{ msg }}
+            </div>
+            {% endif %}
+            <div class="login__inputs">
+                <div class="login__box">
+                    <input name="username" type="text" placeholder="Username:" required class="login__input">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="login__box">
+                    <input name="password" type="password" placeholder="Password:" required class="login__input">
                     <i class="fa-solid fa-lock"></i>
-                 </div>
-              </div>
-  
-              <div class="login__check">
-                 <div class="login__check-box">
+                </div>
+            </div>
+            <button type="submit" class="login__button">Login</button>
+            <div class="login__check">
+                <div class="login__check-box">
                     <input type="checkbox" class="login__check-input" id="user-check">
                     <label for="user-check" class="login__check-label">Remember me</label>
-                 </div>
-  
-                 <a href="#" class="login__forgot">Forgot Password?</a>
-              </div>
-  
-              <button type="submit" class="login__button">Login</button>
-  
-              <div class="login__register">
-                 Don't have an account? <a href="{{url_for('register')}}"> Register</a>
-              </div>
-           </form>
+                </div>
+                <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+            <div class="login__register">
+                Don't have an account? <a href="{{ url_for('register') }}">Register</a>
+            </div>
+        </form>
+        
         </div>
      </body>
   </html>
