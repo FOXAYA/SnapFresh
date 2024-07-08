@@ -35,41 +35,41 @@
 </head>
 <body style=" text-align: center; align:center; background-repeat: no-repeat; background-size: auto;">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <img src="../static/Name.jpg" alt="Tag" width="48px" height="46px">
-          <a class="navbar-brand" href="{{ url_for('home')}}">FruitAssessment-Expert
-Public
-</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="{{ url_for('home')}}">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/Medo20300/FruitAssessment-Expert/tree/main">Code Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Connect
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="www.linkedin.com/in/medhat-deif-lab-manager">Linkedin</a>
-              <a class="dropdown-item" href="https://www.facebook.com/share/p/YF3AsBKx11stNEWB/">FaceBook</a>
-              <div class="dropdown-divider"></div>
-	      <a class="dropdown-item" href="https://medium.com/@medhat.dheif/developing-the-snapfresh-a-journey-of-learning-and-innovation-40e9750c260e">Medium</a>
-
-            </div>
-          </li>
-
-          </ul>
-
-          </div>
-   </nav>
-
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container nav_container">
+    <a class="navbar-brand" href="{{ url_for('home')}}"><strong class="strong">Snap</strong>Fresh</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('home')}}">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('register')}}">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('login')}}">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/Medo20300/FruitAssessment-Expert.git">Code Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contact Us
+                </a>
+        
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/medhat-deif-lab-manager/">Linkedin</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="https://www.facebook.com/setkfoxaya1?mibextid=ZbWKwL/">Facebook</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
 
 <br>
 <h1><span class="badge badge-secondary">Predictions are out !! <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-award" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
