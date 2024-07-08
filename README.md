@@ -17,7 +17,7 @@
 Link:<br> https://github.com/Medo20300/FruitAssessment-Expert
 <br>
 <br>
- <img target="_blank" src="/home/medhat/FruitAssessment-Expert/static" width="800px">
+ <img target="_blank" src="../FruitAssessment-Expert/static" width="800px">
 
 
 ![](https://forthebadge.com/images/badges/made-with-python.svg) [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
