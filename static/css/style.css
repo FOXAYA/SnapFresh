@@ -52,6 +52,54 @@ a {
 .nav-login .navbar-nav .nav-link {
     color: var(--bord-color);
 }
+/* predict styles */
+.body {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.nav-pred .strong {
+    color: var(--bord-color);
+}
+
+.container1 {
+    width: 100%;
+    background-color: #D3D3D3;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+/* Fruits styles */
+.apple {
+    width: {{fruit_dict['apple']}}%;
+    background-color: #8B0000;
+}
+
+.banana {
+    width: {{fruit_dict['banana']}}%;
+    background-color: #B8860B;
+}
+
+.orange {
+    width: {{fruit_dict['orange']}}%;
+    background-color: #FF8C00;
+}
+
+.fresh {
+    width: {{rotten[0]}}%;
+    background-color: #228B22;
+}
+
+.rotten {
+    width: {{rotten[1]}}%;
+    background-color: #696969;
+}
 
 .login__bg {
     position: fixed;
@@ -185,55 +233,6 @@ a {
 }
 
 
-
-/* predict styles */
-.body {
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-}
-
-.nav-pred .strong {
-    color: var(--bord-color);
-}
-
-.container1 {
-    width: 100%;
-    background-color: #D3D3D3;
-}
-
-.skills {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-}
-
-/* Fruits styles */
-.apple {
-    width: {{fruit_dict['apple']}}%;
-    background-color: #8B0000;
-}
-
-.banana {
-    width: {{fruit_dict['banana']}}%;
-    background-color: #B8860B;
-}
-
-.orange {
-    width: {{fruit_dict['orange']}}%;
-    background-color: #FF8C00;
-}
-
-.fresh {
-    width: {{rotten[0]}}%;
-    background-color: #228B22;
-}
-
-.rotten {
-    width: {{rotten[1]}}%;
-    background-color: #696969;
-}
 
 
 
