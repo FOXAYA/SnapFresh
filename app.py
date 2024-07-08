@@ -20,7 +20,7 @@ app = Flask(__name__)
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'medhat2030'
-app.config['MYSQL_DB'] = 'WelcomeUser'
+app.config['MYSQL_DB'] = 'UserAuthentication'
 app.config['MYSQL_UNIX_SOCKET'] = '/var/run/mysqld/mysqld.sock'
 
 # Initialize MySQL

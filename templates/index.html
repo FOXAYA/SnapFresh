@@ -1,25 +1,36 @@
-<!-- Store this code in 'index.html' file inside the 'templates' folder-->
+<!-- Store this code in 'index.html' file inside the 'templates' folder -->
 
-<html>
-        <head>
-                <meta charset="UTF-8">
-                <title> Index </title>
-                <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-        </head>
-        <body></br></br></br></br></br>
-                <div align="center">
-                <div align="center" class="border">
-                        <div class="header">
-                                <h1 class="word">Index</h1>
-                        </div></br></br></br>
-                                <h1 class="bottom">
-                                        Hi {{session.username}}!!</br></br> Welcome to the index page...
-                                </h1></br></br></br>
-                                <a href="{{ url_for('logout') }}" class="btn">Logout</a>
-                </div>
-                </div>
-        </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+</head>
+<body>
+    <div align="center">
+        <div class="border">
+            <header>
+                <h1 class="word">Index</h1>
+            </header>
+            <main>
+                <h1 class="bottom">
+                    {% if session.loggedin %}
+                        Hi {{ session.username }}!!<br><br> Welcome to the index page...
+                    {% else %}
+                        Please log in to access this page.
+                    {% endif %}
+                </h1>
+                {% if session.loggedin %}
+                    <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}" class="btn">Login</a>
+                {% endif %}
+            </main>
+        </div>
+    </div>
+</body>
 </html>
