@@ -17,9 +17,13 @@
 Link:<br> https://github.com/Medo20300/FruitAssessment-Expert
 <br>
 <br>
+
  <vedio width ="800" height= " 500" controls>
 <source src="../static/AllStep.mp4" type="vedio/mp4">
 </vedio>
+
+ [![Watch the video](https://img.youtube.com/vi/TOKEN/maxresdefault.jpg)](https://github.com/Medo20300/FruitAssessment-Expert/assets/135258669/d9d17f0a-006a-48f7-85e2-e212b6e4444e)
+
 
 
 ![](https://forthebadge.com/images/badges/made-with-python.svg) [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
